@@ -42,7 +42,12 @@ body{
     border-radius: 6px;
 }
 
+.header-nav a:hover{
+    text-decoration: underline;
+}
+
 a.header-nav--active{
     background-color: #cbe300;
     color: black;
+    pointer-events: none; /* não recebe evento de ponteiro do mouse */
 }
