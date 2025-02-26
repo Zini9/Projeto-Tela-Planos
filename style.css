@@ -26,6 +26,7 @@ body{
     font-size: 36px;
     text-transform: uppercase;
     margin-left: 16px;
+    letter-spacing: 2px;
 }
 
 .header-nav ul{
@@ -50,4 +51,65 @@ a.header-nav--active{
     background-color: #cbe300;
     color: black;
     pointer-events: none; /* não recebe evento de ponteiro do mouse */
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-plan {
+    flex: 1; /* ocupa todo o espaço disponível */
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.class-plan-title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.pricing-plan-price p {
+    margin-top: 0;
+}
+
+.pricing-plan-price {
+    font-size: 34px;
+}
+
+.pricing-plan-features {
+    margin: 0 0 35px 0;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1; /* Deixa os botões alinhados */
+}
+
+.pricing-plan-features li::marker {
+    color: #cbe300;
+    
+}
+
+.pricing-plan-cta {
+    text-decoration: none;
+    color: #0C1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.pricing-plan-cta:hover {
+    background-color: #05080a;
+    color: white;
 }
